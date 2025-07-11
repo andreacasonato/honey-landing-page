@@ -104,11 +104,11 @@
         <p>Fill out the form below and we'll send a taste of our purest honey, on us.</p>
         <form action="" method="post">
             <div class="form__name">
-                <label id="first-name-label" for="name">
+                <label id="first-name-label" for="first-name">
                 <input type="text" name="name" id="first-name" minlength="2" placeholder="First name" required>
                 </label>
                 
-                <label id="last-name-label" for="name">
+                <label id="last-name-label" for="last-name">
                 <input type="text" name="name" id="last-name" minlength="2" placeholder="Last name" required>
                 </label>
             </div>
@@ -119,7 +119,7 @@
                 </label>
 
                 <label id="phone-label" for="phone">
-                <input type="tel" name="phone" pattern="[0-9]{10}" maxlength="9" inputmode="numeric" placeholder="Your phone number" required />
+                <input type="tel" name="phone" pattern="[0-9]{10}" maxlength="10" inputmode="numeric" placeholder="Your phone number" required />
                 </label>    
             </div>
             
@@ -187,7 +187,8 @@
                 <label id="zip-code-label" for="zip-code">
                 <input type="number" name="zip-code" size="5" max="99950" min="00501" id="zip-code" placeholder="ZIP Code" required>
                 </label>
-
+            </div>
+            
         <div class="form__honey-type">
         <p>What product would you like to try? (Please choose one)</p>
 
