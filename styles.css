@@ -56,6 +56,7 @@ footer {
     padding-left: 13.875rem;
     padding-right: 13.875rem;
     background-color: var(--footer);
+    color: var(--white);
 }
 
 
@@ -125,7 +126,6 @@ footer {
 .call-button a {
     color: var(--white);
 }
-
 
 .white-background {
     background-color: var(--white);
