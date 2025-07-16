@@ -123,6 +123,18 @@ footer {
 /* =================================================== */
 
 /* ===== HEADER ===== */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
 .call-button a {
     color: var(--white);
 }
