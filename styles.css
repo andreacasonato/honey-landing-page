@@ -1,9 +1,14 @@
 /* ===== RESET & STYLES ===== */
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Merriweather', sans-serif;
     scroll-behavior: smooth;
     line-height: 1.6;
@@ -180,12 +185,16 @@ footer {
     padding-bottom: 2.5rem;
 }
 
-
 .usp-section{
-    padding: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 
 .usps-box {
     border: 4px dashed var(--yellow);
     padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
 }
