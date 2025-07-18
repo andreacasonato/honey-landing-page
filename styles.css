@@ -75,9 +75,11 @@ footer {
 /* ===== Colors ===== */
 :root {
     --white: #FEFEFE;
+    --grey-background: #FAFAFA;
     --green: #259F00;
     --green-hover: #1f8600;
     --green-form: #DBEDE1;
+
     --yellow-background: #FFF8E3;
     --yellow-cta: #FFDF7E;
     --yellow-boxes: #FFF4D4;
@@ -197,10 +199,35 @@ footer {
 }
 
 .usps-box {
+    background-color: var(--grey-background);
     border: 4px dashed var(--yellow);
     padding: 2rem;
 
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+}
+
+/* =================================================== */
+/* ===== MISSION SECTION ===== */
+
+.mission-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+}
+
+.mission-section h2 {
+    max-width: 412px;
+}
+
+.mission-section p {
+    max-width: 450px;
+}
+
+.mission-section__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
 }
