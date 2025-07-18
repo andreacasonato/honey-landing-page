@@ -22,16 +22,19 @@ a {
 h1 {
     font-size: 2.9863rem;
     color: var(--white);
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 h2 {
     font-size: 2.4881rem;
     color: var(--title-black);
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 h3 {
     font-size: 2.0737rem;
     color: var(--title-black);
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 p {
@@ -153,6 +156,9 @@ footer {
 
 .hero-image {
     background-image: url(Images/HoneyHeroImage.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .main__title {
