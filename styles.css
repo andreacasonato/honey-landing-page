@@ -202,11 +202,16 @@ footer {
 .usps-box {
     background-color: var(--grey-background);
     border: 4px dashed var(--yellow);
-    padding: 2rem;
+    padding: 3rem;
 
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+}
+
+.usps-box__heading {
+    display: flex;
+    gap: 0.5rem;
 }
 
 /* =================================================== */
@@ -266,7 +271,7 @@ footer {
 .form-box {
     background-color: var(--green-form);
     border: 4px dashed var(--green);
-    padding: 2rem;
+    padding: 3rem;
 }
 
 .order-form h2 {
@@ -277,6 +282,45 @@ footer {
     text-align: center;
     margin-bottom: 1.5rem;
 }
+
+/* ---------------------------------------- */
+
+.form__name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail-input {
+    width: 328px;
+    height: 48px;
+    padding: 0.5rem;
+}
+
+.form__contact {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form__address {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 1rem;
+}
+
+.address-input {
+    display: flex;
+    justify-content: space-between;
+
+    width: 215px;
+    height: 48px;
+    padding: 0.5rem;
+}
+
+
 
 /* =================================================== */
 /* ===== FOOTER ===== */

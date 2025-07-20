@@ -68,19 +68,25 @@
                 
                 <div class="usps-box">
                     <div>
-                        <img class="checkmark-icon" src="Images/Checkmark-icon.svg" alt="Checkmark icon">
-                        <h3>Unmatched Purity and Quality</h3>
-                        <p>Our honey is meticulously sourced from pristine landscapes, ensuring unparalleled purity and quality. Every drop is a testament to the natural goodness of our carefully selected floral sources, delivering a taste that is both authentic and exceptional.</p>
+                        <div class="usps-box__heading">
+                            <img class="checkmark-icon" src="Images/Checkmark-icon.svg" alt="Checkmark icon">
+                            <h3>Unmatched Purity and Quality</h3>
+                        </div>
+                            <p>Our honey is meticulously sourced from pristine landscapes, ensuring unparalleled purity and quality. Every drop is a testament to the natural goodness of our carefully selected floral sources, delivering a taste that is both authentic and exceptional.</p>
                     </div>
                     <div>
-                        <img class="checkmark-icon" src="Images/Checkmark-icon.svg" alt="Checkmark icon">
-                        <h3>Sustainably Harvested and Eco-Friendly</h3>
-                        <p>Choose honey that cares for the planet. Our brand is committed to sustainable beekeeping practices and eco-friendly production methods. By selecting our honey, you not only savor the exquisite taste but also contribute to the preservation of our precious ecosystems.</p>
+                        <div class="usps-box__heading">
+                            <img class="checkmark-icon" src="Images/Checkmark-icon.svg" alt="Checkmark icon">
+                            <h3>Sustainably Harvested and Eco-Friendly</h3>
+                        </div>
+                            <p>Choose honey that cares for the planet. Our brand is committed to sustainable beekeeping practices and eco-friendly production methods. By selecting our honey, you not only savor the exquisite taste but also contribute to the preservation of our precious ecosystems.</p>
                     </div>
                     <div>
-                        <img class="checkmark-icon" src="Images/Checkmark-icon.svg" alt="Checkmark icon">
-                        <h3>Artisanal Craftsmanship, Unforgettable Flavor</h3>
-                        <p>Crafted with passion and expertise, our honey undergoes artisanal processes that bring out its unique and unforgettable flavor profile. From hive to jar, our dedication to preserving the natural essence of honey ensures each jar is a delectable masterpiece, ready to elevate your culinary experiences.</p>
+                        <div class="usps-box__heading">
+                            <img class="checkmark-icon" src="Images/Checkmark-icon.svg" alt="Checkmark icon">
+                            <h3>Artisanal Craftsmanship, Unforgettable Flavor</h3>
+                        </div>
+                            <p>Crafted with passion and expertise, our honey undergoes artisanal processes that bring out its unique and unforgettable flavor profile. From hive to jar, our dedication to preserving the natural essence of honey ensures each jar is a delectable masterpiece, ready to elevate your culinary experiences.</p>
                     </div>
                 </div>
             </div>
@@ -138,21 +144,21 @@
         <form class="form-box" action="" method="post">
             <div class="form__name">
                 <label id="first-name-label" for="first-name">
-                <input type="text" name="name" id="first-name" minlength="2" placeholder="First name" required>
+                <input class="detail-input" type="text" name="name" id="first-name" minlength="2" placeholder="*First name" required>
                 </label>
                 
                 <label id="last-name-label" for="last-name">
-                <input type="text" name="name" id="last-name" minlength="2" placeholder="Last name" required>
+                <input class="detail-input" type="text" name="name" id="last-name" minlength="2" placeholder="*Last name" required>
                 </label>
             </div>
 
             <div class="form__contact">
                 <label id="email-label" for="email">
-                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input class="detail-input" type="email" name="email" id="email" placeholder="*Email" required>
                 </label>
 
                 <label id="phone-label" for="phone">
-                <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" maxlength="10" inputmode="numeric" placeholder="Your phone number" required />
+                <input class="detail-input" type="tel" name="phone" id="phone" pattern="[0-9]{10}" maxlength="10" inputmode="numeric" placeholder="*Phone number" required />
                 </label>    
             </div>
             
@@ -160,11 +166,11 @@
 
             <div class="form__address">
                 <label id="address-label" for="address">
-                <input type="text" name="address" id="address" placeholder="Your address" required>
+                <input class="address-input" type="text" name="address" id="address" placeholder="*Your address" required>
                 </label>
 
-                <select id="dropdown" name="frequency" class="frequency" required>
-                <option disabled selected value>State</option>
+                <select class="address-input" id="dropdown" name="dropdown" class="state" required>
+                <option disabled selected value>*State</option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -218,7 +224,7 @@
                 </select>
 
                 <label id="zip-code-label" for="zip-code">
-                <input type="number" name="zip-code" size="5" max="99950" min="00501" id="zip-code" placeholder="ZIP Code" required>
+                <input class="address-input" type="number" name="zip-code" size="5" max="99950" min="00501" id="zip-code" placeholder="*ZIP Code" required>
                 </label>
             </div>
 
