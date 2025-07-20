@@ -320,6 +320,33 @@ footer {
     padding: 0.5rem;
 }
 
+.form__honey-type {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form__honey-type p {
+    color: var(--title-black);
+    font-weight: 800;
+}
+
+.form__honey-type--option {
+    color: var(--paragraph-black);
+}
+
+.form__privacy-checkbox {
+    margin-bottom: 0.5rem;
+}
+
+.form__privacy-checkbox--text {
+    font-size: 0.9rem;
+    color: var(--paragraph-black);
+}
+
+.form__privacy-checkbox--text a {
+    text-decoration: underline;
+}
+
 
 
 /* =================================================== */
