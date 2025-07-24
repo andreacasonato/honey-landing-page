@@ -121,9 +121,12 @@ footer {
     border-radius: 24px;
     cursor: pointer;
     transition: all 0.5s;
+
+    display: inline-flex;
+    align-items: center;
 }
 
-/* ===== Hover ===== */
+/* ===== Button Hover ===== */
 
 .cta-button:hover {
     background-color: var(--yellow);
@@ -132,6 +135,18 @@ footer {
 .submit-button:hover,
 .call-button:hover {
     background-color: var(--green-hover);
+}
+
+/* Align button icon */
+
+.call-button a {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.submit-button__arrow {
+    display: inline-block;
 }
 
 /* =================================================== */
