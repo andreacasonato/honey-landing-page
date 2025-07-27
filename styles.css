@@ -142,8 +142,10 @@ footer {
     gap: 0.3rem;
 }
 
-.submit-button__arrow {
-
+.submit-button {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
 }
 
 /* =================================================== */
