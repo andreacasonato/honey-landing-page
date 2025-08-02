@@ -315,20 +315,20 @@ footer {
 .form__name {
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
 }
 
 .detail-input {
     width: 328px;
     height: 48px;
     padding: 0.5rem;
-
-    display: flex;
-    gap: 1rem;
+    box-sizing: border-box;
 }
 
 .form__contact {
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
 
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -337,18 +337,16 @@ footer {
 .form__address {
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
 
     margin-top: 1rem;
 }
 
 .address-input {
-    display: flex;
-    justify-content: space-between;
-    gap: 1.5rem;
-
     width: 282px;
     height: 48px;
     padding: 0.5rem;
+    box-sizing: border-box;
 }
 
 .address-input__state,
@@ -356,6 +354,7 @@ footer {
     width: 180px;
     height: 48px;
     padding: 0.5rem;
+    box-sizing: border-box;
 }
 
 .form__honey-type {
@@ -430,6 +429,20 @@ footer {
     .mission-section p {
         max-width: 380px;
     }
+
+    /* Form adjustments for medium screens */
+    .detail-input {
+        width: 280px;
+    }
+
+    .address-input {
+        width: 240px;
+    }
+
+    .address-input__state,
+    .address-input__zip {
+        width: 150px;
+    }
 }
 
 /* Small Desktop/Large Tablet - 992px to 768px */
@@ -481,6 +494,20 @@ footer {
     .box {
         max-width: 100%;
         width: 100%;
+    }
+
+    /* Form adjustments for smaller screens */
+    .detail-input {
+        width: 240px;
+    }
+
+    .address-input {
+        width: 200px;
+    }
+
+    .address-input__state,
+    .address-input__zip {
+        width: 120px;
     }
 }
 
@@ -537,7 +564,7 @@ footer {
     }
 
     .detail-input {
-        max-width: none;
+        width: 100%;
     }
 
     .form__address {
@@ -547,7 +574,7 @@ footer {
     .address-input,
     .address-input__state,
     .address-input__zip {
-        max-width: none;
+        width: 100%;
     }
 
     /* Reduce padding in sections */
