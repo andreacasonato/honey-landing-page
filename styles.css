@@ -509,6 +509,7 @@ footer {
     .address-input__zip {
         width: 120px;
     }
+
 }
 
 /* Tablet - 768px to 576px */
@@ -554,7 +555,8 @@ footer {
     .main__video {
         width: 100%;
         height: auto;
-        max-width: 500px;
+        max-width: 90vw;
+        min-height: 250px;
     }
 
     /* Form adjustments */
@@ -646,6 +648,14 @@ footer {
     .footer__div-menu ul {
         flex-direction: column;
         gap: 0.5rem;
+    }
+
+    /* Video responsive for smallest screens */
+    .main__video {
+        width: 100%;
+        height: auto;
+        max-width: 95vw;
+        min-height: 200px;
     }
 
     /* Button text adjustments */
