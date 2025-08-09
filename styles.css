@@ -315,11 +315,13 @@ footer {
 .form__name {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
 .detail-input {
-    width: 328px;
+    width: 100%;
+    flex-grow: 1;
     height: 48px;
     padding: 0.5rem;
     box-sizing: border-box;
@@ -328,30 +330,60 @@ footer {
 .form__contact {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 1rem;
-
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
+.form__name label,
+.form__contact label {
+    flex: 1 1 48%;
+    /* Fields will grow and take nearly half width */
+    min-width: 200px;
+    /* Minimum width for responsiveness */
+}
+
 .form__address {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 1rem;
-
     margin-top: 1rem;
 }
 
 .address-input {
-    width: 282px;
+    min-width: 200px;
+    flex: 3 1 70%;
     height: 48px;
     padding: 0.5rem;
     box-sizing: border-box;
 }
 
-.address-input__state,
+.address-input__state {
+    flex: 1 1 25%;
+    min-width: 120px;
+    height: 48px;
+    padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    /* For Safari */
+    -moz-appearance: none;
+    /* For Firefox */
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>');
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 1rem;
+}
+
+/* Remove default dropdown arrow in IE */
+.address-input__state::-ms-expand {
+    display: none;
+}
+
 .address-input__zip {
-    width: 180px;
+    flex: 1 1 20%;
+    min-width: 120px;
     height: 48px;
     padding: 0.5rem;
     box-sizing: border-box;
@@ -429,20 +461,6 @@ footer {
     .mission-section p {
         max-width: 380px;
     }
-
-    /* Form adjustments for medium screens */
-    .detail-input {
-        width: 280px;
-    }
-
-    .address-input {
-        width: 240px;
-    }
-
-    .address-input__state,
-    .address-input__zip {
-        width: 150px;
-    }
 }
 
 /* Small Desktop/Large Tablet - 992px to 768px */
@@ -495,21 +513,6 @@ footer {
         max-width: 100%;
         width: 100%;
     }
-
-    /* Form adjustments for smaller screens */
-    .detail-input {
-        width: 240px;
-    }
-
-    .address-input {
-        width: 200px;
-    }
-
-    .address-input__state,
-    .address-input__zip {
-        width: 120px;
-    }
-
 }
 
 /* Tablet - 768px to 576px */
