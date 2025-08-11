@@ -1,7 +1,7 @@
 # Pure Honey Landing Page
 A modern, conversion-focused landing page for a honey producing company.
 
-## About This Project
+## About
 This project redesigns a honey company's sales page from the ground up. The original version was one of my first projects from the FreeCodeCamp responsive web design curriculum, but it needed a complete makeover to look more professional and appealing.
 
 ## Project Goals
