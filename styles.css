@@ -440,7 +440,7 @@ footer {
 /* Large Desktop - 1200px and up (default styles) */
 
 /* Medium Desktop/Laptop - 1200px to 992px */
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
     section {
         padding-left: 8rem;
         padding-right: 8rem;
@@ -464,7 +464,7 @@ footer {
 }
 
 /* Small Desktop/Large Tablet - 992px to 768px */
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
     section {
         padding-left: 4rem;
         padding-right: 4rem;
@@ -516,7 +516,7 @@ footer {
 }
 
 /* Tablet - 768px to 576px */
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     section {
         padding-left: 2rem;
         padding-right: 2rem;
@@ -597,7 +597,7 @@ footer {
 }
 
 /* Mobile - 576px and below */
-@media (max-width: 575px) {
+@media screen and (max-width: 575px) {
     section {
         padding-left: 1rem;
         padding-right: 1rem;
